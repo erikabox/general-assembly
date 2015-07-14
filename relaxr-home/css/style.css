@@ -5,7 +5,6 @@ Author: Your Name
 Developer @GA in NYC
 */
 
-/*Test*/
 
 /******************************************
 /* SETUP
@@ -51,7 +50,7 @@ body {
   font-size: 12px;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif;
-  background-color: #f0efef;
+  background-color: #f0efef; 
 }
 
 h1 {
@@ -61,64 +60,68 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 50px;
+}
+
 h3 {
   color: #033048;
   font-weight: 600;
   text-align: left;
   font-size: 20px;
-}
-
-.sidebar-heading {
-  font-weight: 800;
-  font-size: 20px;
   padding-bottom: 10px;
 }
 
-p, ul {
+p {
   color: #121212;
   font-weight: 300;
   text-align: left;
   font-size: 13px;
+  padding-bottom: 30px;
 }
 
-a {
-  text-decoration: none;
+ul {
   color: #121212;
-}
-
-.read-more {
-  font-weight: 600;
+  font-weight: 300;
+  text-align: left;
   font-size: 13px;
-  text-align: right;
+  margin-left: 20px;
 }
 
-.read-more:hover {
-  color: #606161;
+li{
+  line-height: 1.5;
+  padding-bottom: 10px;
 }
 
-.learn-more {
+blockquote p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.quote-name {
   font-weight: 600;
-  font-size: 13px;
+  font-style: normal;
 }
 
-li {
-  line-height: 1.6;
-}
-
-.nav a {
-  list-style: none;
-  color: #f9e42e;
+p.copyright {
+  color: #fff;
   font-weight: 600;
-  font-size: 24px;
-  padding-left: 15px;
-  text-align: right;
+  text-align: center;
+  font-size: 9px;
 }
 
-.nav li {
-    display: inline;
+.logo-footer {
+    color: #f9e42e;
+    text-align: center;
 }
-
-
 
 /******************************************
 /* LAYOUT
@@ -126,78 +129,73 @@ li {
 
 /* Center the container */
 .wrapper {
-  width: 80%;
-  /*max-width: 960px;*/
-  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 header {
+    width: 100%;
+    height: 500px;
+    float: left;
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    padding: 20px 80px 20px 80px;
+}
+
+/* Image properties
+    background-image: url("../images/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: rgb(134,141,157);
+ */
+
+.benefits1, .benefits2 {
+  width: 50%;
+  height: 400px;
+  float: left;
+  background-color: #f0efef; 
+  padding: 80px 50px 20px 80px;
+}
+
+.quote-section {
+  width: 100%;
+  height: 235px;
+  float: left;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover; 
+  padding: 50px 80px;
+}
+
+.subscribe-strip {
   width: 100%;
   float: left;
-  background-color: #033048;
-  padding: 20px 50px;
-}
-
-.logo {
-  width: 20%;
-  float: left;
-  text-align: left;
-}
-
-
-.nav-wrapper {
-  width: 80%;
-  float: right;
-  text-align: right;
-}
-
-#content-section {
-  overflow: hidden;
-  padding: 50px;
-  width: 100%;
-}
-
-.blog-content {
-  width: 60%;
-  float: left;
-}
-
-aside {
-  width: 30%;
-  float: right;
-  padding-left: 20px;
-}
-
-
-.sidebar {
-  padding-bottom: 20px;
-}
-
-#ad-unit {
-  background-color: #ffffff;
-  height: 300px;
-  padding: 10px;
-}
-
-#subscribe-strip {
-  width: 100%;
-  background-color: #f9e42e;
+  background-color: #f9e42e; 
   padding: 20px 80px;
 }
 
 footer {
   width: 100%;
+  height: 200px;
   float: left;
-  background-color: #121212;
+  background-color: #121212; 
+  padding: 50px 80px 20px 80px;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-img {
-  width: 100%;
-  padding: 20px 0 20px 0;
+.footer-sm a {
+  display: inline-block;
+  height: 15px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 auto;
 }
 
 button {
@@ -214,6 +212,19 @@ button {
   margin: 0 auto;
 }
 
+
+.header-btn {
+  background-color: #f9e42e;
+  color: #121212;
+  width: 130px;
+  height: 35px;
+ }
+
+.header-btn:hover {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 .subscribe-btn {
   background-color: #121212;
   color: #ffffff;
@@ -228,9 +239,4 @@ button {
   color: #121212;
 }
 
-.line-separator {
-  height: 1px;
-  border-bottom:1px solid #000000;
-  padding: 10px 0 20px 0;
-}
 
